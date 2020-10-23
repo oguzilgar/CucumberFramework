@@ -1,0 +1,140 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10306058200,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user login page with \"User2\" and \"Userpass123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"User2\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"Userpass123\"",
+                  "offset": 37
+                }
+              ],
+              "location": "Login_stepDefs.the_user_login_page_with_and(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4960602400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user navigates to \"deck\" module",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"deck\"",
+                  "offset": 22
+                }
+              ],
+              "location": "Activity_StepDefs.the_user_navigates_to_module(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-10-23T15:39:08.406Z",
+        "before": [
+          {
+            "result": {
+              "duration": 7671997800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "The user should be able to move A story",
+        "description": "",
+        "id": "deck-tests;the-user-should-be-able-to-move-a-story",
+        "after": [
+          {
+            "result": {
+              "duration": 321000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 156443600,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "the user click on \"QA Engineers\" button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"QA Engineers\"",
+                  "offset": 18
+                }
+              ],
+              "location": "Deck_StepDefs.the_user_click_on_button(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6309057500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the user moves a story from \"ToDo\" to \"Doing\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ToDo\"",
+                  "offset": 28
+                },
+                {
+                  "val": "\"Doing\"",
+                  "offset": 38
+                }
+              ],
+              "location": "Deck_StepDefs.the_user_moves_a_story_from_to(String,String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@moveAStory"
+          }
+        ]
+      }
+    ],
+    "name": "Deck Tests",
+    "description": "",
+    "id": "deck-tests",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/Deck.feature",
+    "tags": []
+  }
+]

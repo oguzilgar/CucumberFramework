@@ -1,4 +1,4 @@
-package com.CucumberTest.utilities;
+package com.utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.*;

@@ -1,7 +1,7 @@
-package com.CucumberTest.step_definitions;
+package com.step_definitions;
 
-import com.CucumberTest.utilities.DBUtils;
-import com.CucumberTest.utilities.Driver;
+import com.utilities.DBUtils;
+import com.utilities.Driver;
 import io.cucumber.core.api.Scenario;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -21,7 +21,14 @@ public class Hooks {
     @Before
     public void setUp(){
         Driver.get().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        Driver.get().manage().window().fullscreen();
+        Driver.get().manage().window().maximize();
+
+
+
+
+
+
+
     }
 
     @After("@db")
@@ -38,7 +45,7 @@ public class Hooks {
             scenario.embed(screenshot,"image/png");
         }
 
-        Driver.closeDriver();
+     //   Driver.closeDriver();
     }
 
 

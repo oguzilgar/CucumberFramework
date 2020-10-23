@@ -1,4 +1,4 @@
-package com.CucumberTest.utilities;
+package com.utilities;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;

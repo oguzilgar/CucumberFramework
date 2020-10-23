@@ -1,4 +1,4 @@
-package com.CucumberTest.runners;
+package com.runners;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
@@ -10,9 +10,9 @@ import org.junit.runner.RunWith;
                 "html:target/default-html-reports",
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/features/",
-        glue = "com/CucumberTest/step_definitions/",
+        glue = "com/step_definitions/",
         dryRun = false,
-        tags = "@login"
+        tags = "@moveAStory"
 )
 public class CukesRunner {
 }
